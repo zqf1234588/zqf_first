@@ -1,0 +1,407 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Stark Intelligent Machinery</title>
+		<link rel="stylesheet" href="css/website.css">
+		<meta name="author" content="FAMILYNAME GivenName">
+		<meta name="robots" content="index, follow">
+		<meta name="description" content="e-commerce app description here">
+		<!-- In e-commerce project part 4 - add the JQUERY library link here -->
+		
+	</head>
+	
+	<body>
+
+		<form id="orderForm">
+		
+			<div id="pageContainer">
+
+				<div id="headerContainer">
+          
+					<div id="logo">
+						<img src="images/1.png" width="258" height="185" alt="company logo"><!-- <h1> can be replaced by an image -->
+					</div>
+					
+					<div id="header">
+						<img src="images/header.jpg" width="698" height="185" alt="header image"><!-- <h1> can be replaced by an image -->
+					</div>
+			
+				</div><!-- end of the "headerContainer" div -->
+				
+				<!-- ======================================================================== -->
+				
+				<div id="menu">
+
+					<table>
+					<tr>
+						<td> HOME </td>
+						<td> SHOWROOM </td>
+						<td> CARS FOR SALE </td>
+						<td> FINANCE </td>
+						<td> PARTS </td>
+						<td> SERVICE </td>
+					</tr>
+				</table>
+
+				</div> <!-- end of the "menu" div -->
+				
+				<!-- ======================================================================== -->
+				
+				<div id="product">  <!-- Product -->
+					
+					<div id="productTitle">
+						<!-- "productName" is the id reserved for the name of the product-->
+						<h1 id="productName">iron man</h1>
+						<!-- hidden input element to hold the ID of the product being displayed -->
+						<input type="hidden" id="hiddenProductId" value="0">
+					</div>
+					
+					<div id="productInfo">
+						<!-- "productDescription" is the id reserved for text describing the product-->
+						<p id="productDescription">
+							We have a wide variety of Iron Man's suits here. 
+							They are usually used in war and self-defense.
+							They can fly at speeds of up to 2,000 kilometers per hour and are equipped with missiles and machine guns.
+						</p>
+						
+						<!-- "productPrice" is the id reserved for the product price -->
+						<p>Price $<span id="productPrice">80000000</span></p>
+					</div>
+				
+					<div id="productImage">
+						<!-- "productImage" is the id reserved to contain an image of the product -->
+						<!-- You must decide on dimensions for image -->
+						<img src="images/jiqiren4.jpg" width="320" height="225" alt="Product image">
+						
+					</div>
+				
+					<div id="productOptions">
+					
+						<!-- html code for product options, select lists, radio buttons etc -->
+					
+						<p>
+							What color?
+							<br>
+						<!-- add the radio buttons for the car models including a label for each -->
+						<input type="radio" name="model" id="red" value="red">
+						<label for="red"> red </label>
+						
+						<input type="radio" name="model" id="silver" value="silver">
+						<label for="silver"> silver </label>
+						
+						<input type="radio" name="model" id="black" value="black">
+						<label for="black"> black</label>
+						
+						<input type="radio" name="model" id="white" value="white">
+						<label for="white"> white</label>
+						
+						<input type="radio" name="model" id="brown" value="brown">
+						<label for="brown"> brown</label>
+						
+				
+						</p>
+						<br>
+	
+						<!-- html code for product options, select lists, radio buttons etc -->
+						<p>
+							choose which type
+						<select id="type">
+						<option value="Space Armor MK I">Space Armor MK I</option>
+					
+						<option value="Iron Man Armor Model 07">Iron Man Armor Model 07</option>
+						
+					
+						<option value="Iron Man Armor MK VII">Iron Man Armor MK VII</option>
+						
+					
+						<option value="Hydro Armor">Hydro Armor</option>
+						
+				
+						<option value="Low Observable Armor">Low Observable Armor</option>
+						</select>
+						</p>
+						<br>
+						<!-- html code for "Quantity" -->
+						<p>
+							<label for="quantity"> How many aromr do you want?</label>
+						<select id="quantity">
+									<option value="1"> 1 </option>
+									<option value="2"> 2 </option>
+									<option value="3"> 3 </option>
+									<option value="4"> 4 </option>
+									<option value="5"> 5 </option>
+									<option value="6"> 6 </option>
+									<option value="7"> 7 </option>
+									<option value="8"> 8 </option>
+									<option value="9"> 9 </option>
+									<option value="10"> 10 </option>
+						
+						</select>
+				
+						<!-- html code for "Add to cart" button -->
+							<input type="button" id="ok" value="ok">
+						</p>
+						
+					</div>
+					<br>
+				
+					
+				</div> <!-- end of the "product" div -->
+				
+				<!-- ======================================================================== -->
+						
+				<div id="cart">		
+
+					<h1>Cart</h1><!-- heading text should be changed -->
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+					Cart must remain exactly as shown below. Style it any way you want.</p>
+					
+					<!-- the table for the cart data must have the id="cartTable" -->
+					<table id="cartTable">
+						<!-- this is the heading row, only change the option names -->
+						<tr>
+							<th>choose</th> <!-- heading for checkbox column -->
+							<th>Quantity</th> <!-- heading for quantity column -->
+							<th>Iron Man Armor</th>
+							<th>color</th> <!-- put an option name here - e.g. Colour -->
+							<th>type</th> <!-- put an option name here - e.g. Size -->
+							<th>unit price</th> <!-- heading for how much each product costs -->
+							<th>Subtotal</th>
+						</tr>
+						
+						<tr>
+							<th><input type="checkbox" id="cartchoose1" name="extras" value="check this type" >
+							<label for="cartchoose1">check this type</label></th>
+							<th>1</th>
+							<th>Iron man armor</th>
+							<th>Space Armor MK I</th>
+							<th>red</th>
+							<th>$800000000</th>
+							<th>$800000000</th>
+						</tr>
+							
+						<tr>
+							<th><input type="checkbox" id="cartchoose2" name="extras" value="check this type">
+							<label for="cartchoose2">check this type</label></th>
+							<th>2</th>
+							<th>Iron man armor</th>
+							<th>Iron Man Armor MK VII</th>
+							<th>silver</th>
+							<th>$800000000</th>
+							<th>$800000000</th>
+						</tr>
+						
+						
+				
+							
+						
+
+						<!-- First product row -->
+						
+						<!-- The first table cell in this row must be a checkbox -->
+
+
+            
+
+						<!-- this final cart row must keep the id="cartTotalRow" -->
+						
+						<tr id="cartTotalRow"> 
+							<th colspan="5">&nbsp;</th>
+							<th>Total: </th>
+							<th><span id="cartTotal">800000000</span></th><!-- put total cost in this span -->
+						</tr>
+					</table>
+					
+					<div id="cartButtons">
+						<p></p>
+						<input type="button" id="cartRemove" value="Remove Selected Product">
+						<input type="button" id="cartCancel" value="Cancel">
+						<input type="button" id="cartCheckout" value="Checkout">
+					</div>
+					
+				</div> <!-- end of the "cart" div -->
+				
+				<!-- ======================================================================== -->
+				
+				<div id="checkout">
+
+					<h1>CHECKOUT</h1><!-- heading text should be changed -->
+					
+					<!-- the ids "orderDetails" and "orderTotal" must remain unchanged -->
+					
+					<p>
+						You have ordered the following items:1 Space Armor MK I
+					  <br>&nbsp;<span id="orderDetails"> </span> <!-- put order details in this span -->
+					  <br>&nbsp;Total:<span id="orderTotal">$800000000</span><!-- put total cost in this span -->
+					</p>
+					<hr>
+					<p>
+						<!-- add a label for the text box below -->
+						<label for="customerName">Customer's full name: </label>
+						<!-- add a text input element for the name of the customer -->
+						<input type="text"  id="customerName" size="30" maxlength="40" placeholder="enter full name" pattern="[A-Za-z ]+" title="Please use letters only (space allowed)">
+					</p>
+					
+					<p>
+						<!-- add a label for the text box below -->
+						<label for="customerEmail">Customer's email address: </label>
+						<!-- add a text input element for the email address of the customer -->
+						<input type="text"  id="customerEmail" size="25" maxlength="25" placeholder="email address">
+					</p>
+					
+					<p>
+						<!-- add a label for the text box below -->
+						<label for="customerNationality">Customer's nationality: </label>
+						<!-- add a text input element for the car registration  -->
+						<input type="text"  id="customerNationality" placeholder="nationlity">
+					</p>
+					
+					<p>
+						<label for="customerPhonenumber">Customer's Phone Number: </label>
+						<input type="text"  id="customerPhonenumber" placeholder="Phone Number">
+					</p>
+					<p>
+						The Institution You Stand for
+						<select multiple="multiple" size="1">
+							<option value ="state">state</option>
+							<option value ="company">company</option>
+							
+						</select>
+					
+					
+					
+
+					<!-- Put customer controls and credit card controls and 
+					"Buy Now" and "Cancel" button below here -->
+						
+							<input type="button" id="buynow" value="Buy Now">
+							<input type="button" id="cancel" value="Cancel">
+						
+					</p>
+
+					
+				</div> <!-- end of the "checkout" div -->
+				
+				<!-- ======================================================================== -->
+				
+				<div id="receipt">		
+
+					<h1>RECEIPT</h1><!-- heading text should be changed -->
+					
+					<!-- the ids "receiptOrderDetails" and "receiptOrderTotal" must remain unchanged -->
+					<p>
+						<span id="receiptOrderDetails"> Space Armor MK I </span><!-- put order details in this span -->
+						<br>You paid: $800000000<span id="receiptOrderTotal"> </span><!-- put total cost in this span -->
+						<br>Your order will be ready soon<!-- change this message to suit your business -->
+					</p>
+					
+					<!-- Put other required content below here e.g. a button to return to ordering -->
+					<p>
+						<input type="button" id="returntoorder" value="Return To Order">
+					</p>
+						
+				</div> <!-- end of the "receipt" div -->
+				
+				<!-- ======================================================================== -->
+				
+				<div id="passwordSection">	
+				
+					<h2>Login to Access the Administration Section</h2>
+					
+					<p>
+						<!-- Put a input type 'text' for username, including label below  -->
+						<label for="usenamer">Usenamer: </label>
+						<input type="text"  id="usenamer" placeholder="Usenamer">
+
+					</p>
+					
+					<p>
+						<!-- Put a input type 'password' for user password, including label below  -->
+						<label for="password">Password: </label>
+						<input type="text"  id="password" placeholder="Password">
+
+					</p>
+					
+					<p>
+						<input type="button" id="login" value="log in">
+						
+					</p>
+					
+					<!-- Heading for access denied message  -->
+					<h3 id="accessDenied">no acess to log in</h3>
+					
+				</div> <!-- end password section -->
+				
+				<!-- ======================================================================== -->
+			
+				<div id="admin">		
+
+					<h1>Administration Only</h1><!-- heading text should be changed -->
+					
+					
+					
+					
+					<p>
+						<input type="button" id="selectAllProducts" value="All Products">
+						<input type="button" id="selectPurchases" value="Purchases">
+						<input type="button" id="selectTotalSalesToday" value="Todays $$">
+						<input type="button" id="selectlist" value="All customers' list">
+						<!-- Put any other report buttons below  -->
+						
+						
+					</p>
+					<p>Select a report</p>
+					<p>
+						<label for="comment">Report</label>
+						<br>
+						<textarea id="comment" cols="80" rows="5">
+						
+						</textarea>
+					</p>
+					<input type="button" id="close" value="Close">
+					
+					<p>&nbsp;</p>
+					
+					
+					<div id="reportResults">Admin report results will go here</div>
+					
+				</div> <!-- end of the "admin" div -->
+				
+				<!-- ======================================================================== -->
+				
+				<div id="footer">
+
+					<table>
+						<tr>
+							<td class="sited">
+								<img src="images/1.png" width="120" height="120" alt="Small company logo">
+							</td>
+							
+							<td class="middletd">
+								<p>Visit us to know more about iron man armor|Contact us</p>
+								<p>&copy; Iron Man Armor</p>
+							</td>
+					<!-- Put your own e-commerce site details here in the footer -->
+							<td class="sited">
+								<img src="images/facebook.jpg" width="250" height="80" alt="Facebook logo">
+							</td>
+					
+						</tr>
+					</table>
+				</div> <!-- end "footer" div -->
+				
+				<!-- ======================================================================== -->
+				
+			</div> <!-- end of the "pageContainer" div -->
+			
+		</form>
+
+	</body>
+	
+	<!-- In e-commerce project part 4 - JavaScript files go below here -->
+	
+</html>
