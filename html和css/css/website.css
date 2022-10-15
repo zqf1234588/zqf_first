@@ -1,0 +1,222 @@
+/*e-commerce app name Stylesheet*/
+/*Stylesheet authro: FAMILYNAME GivenName*/
+
+
+
+/*set background images, font, colours, text size, etc*/
+body 
+	{
+		background: url(../images/background.jpg);
+		
+	
+		
+	}
+
+/*	Entire e-commerce app is inside this container.
+	  Set width and margins here*/	
+#pageContainer 
+	{
+		width:960px; /*You can decide the width - see Ref WC-M2-1 */
+		margin-left:auto;
+		margin-right: auto;
+
+	}
+
+/*===== HEADER ====================================*/
+#headerContainer
+	{
+		background-color: #902818;
+		border: solid #2A5093 2px;
+		width: 956px;
+	
+	}
+		
+#header
+	{
+		
+		height: 185px;/*205- 10-10 padding*/
+		width: 698px;/*720-10-10 padding*/
+		margin-left: 258px;
+		
+	}
+		
+
+#logo
+	{ 
+		background-color: #902818;
+		height: 185px;/*205- 10-10 padding*/
+		width: 258px;/*240-10-10 padding*/
+		float: left;
+
+	}
+
+/*===== MENU ====================================*/
+#menu
+	{
+		background-color: #902818;
+		height: 27px; /*32-5 padding*/
+		margin-top: 2px;
+		margin-bottom: 2px;
+		padding-top: 5px;
+	}
+
+#menu table
+	{
+		border: solid #2A5093 2px;
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+#menu td
+	{
+		border: solid #2A5093 1px;
+		width: 16.666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666%;
+	}
+	/*===== PRODUCT ====================================*/
+#product
+	{
+	
+		background-color: #902818;
+		border: solid #2A5093 2px;
+		text-align:center;
+	}
+
+#productTitle
+	{
+		background-color: #902818;
+	}
+
+#productName
+	{
+		background-color: #902818;
+		text-align: center;
+	}
+#productInfo
+	{
+		background-color: #902818;
+		text-align: center;
+	
+	}
+
+#productDescription 
+	{
+		background-color: #902818;
+		
+		
+	}
+
+#productPrice
+	{
+		background-color: #902818;
+
+	}
+#productImage
+	{
+		float: left;
+	}
+
+#productOptions
+	{
+		background-color: #902818;
+		
+		text-align: center;
+	}
+
+	
+/*===== CART ====================================*/
+#cart
+	{
+		margin-top:20px;
+		background-color: #902818;
+		border: solid #2A5093 2px;
+		border: solid #2A5093 1px;
+		text-align: center;
+	}
+
+#cartTable th
+	{
+		text-align: left;
+		border: solid #2A5093 1px;
+	
+	}
+	
+table 
+	{
+		
+		
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+#cartTable th.textRight, td.textRight
+	{
+		text-align: right;
+		border: solid #2A5093 1px;
+	}
+
+#cartTotalRow th
+	{
+		border-top: 1px solid #2A5093;
+		border-bottom: 1px solid #2A5093;
+		background-color: #902818;
+		text-align: center;
+	}
+
+/*===== CHECKOUT ====================================*/
+#checkout
+	{
+		margin-top:20px;
+		background-color: #902818;
+		border: solid #2A5093 2px;
+		text-align: center;
+		
+	}
+
+/*===== RECEIPT ====================================*/
+#receipt
+	{
+		margin-top:20px;
+		background-color: #902818;
+		border: solid #2A5093 2px;
+		text-align:center;
+	}
+
+
+/*===== PASSWORD ====================================*/
+#passwordSection
+	{
+		margin-top:20px;
+		background-color: #902818;
+		border: solid #2A5093 2px;
+		text-align: center;
+	}
+/*===== ADMIN ====================================*/
+#admin
+	{
+		margin-top:20px;
+		background-color: #902818;
+		border: solid #2A5093 2px;
+		text-align: center;
+	}
+
+/*===== FOOTER ====================================*/
+#footer
+	{
+		margin-top:20px;
+		background-color: #902818;
+		border: solid #2A5093 2px;
+	}
+
+
+/*===== HTML TAGS ====================================*/
+
+
+
+/*===== CLASSES ====================================*/
+
+
+
+/*===== PSEUDO CLASSES ====================================*/
+
+
+
