@@ -69,12 +69,12 @@ conda activate SimCLR
 pip install -r requirements.txt
 ```
 ### Pretrain
-'''python
+```python
 python run.py -data ./datasets/refuge2/train/images -dataset-name refuge2 --log-every-n-steps 100 --epochs 500 --batch-size 4
-'''
+```
 ### Train the Model
 under the ./SimCLR directory
-go to  `util.py` set your checkopoint 'checkpoint = torch.load('Your pretrained weight', weights_only=True)['state_dict']' Line73,59,45
+go to  `util.py` set your checkopoint `checkpoint = torch.load('Your pretrained weight', weights_only=True)['state_dict']` Line73,59,45
 run 
 ```python
 python seg_train.py  --doubleEncoder 1  --freeze 0 --resolution 512 --train_batch_size 4 --backbone timm-efficientnet-b5 --num_train_epochs 250
