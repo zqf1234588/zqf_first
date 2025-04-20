@@ -22,7 +22,7 @@ We leverage the **Unet++** architecture, built on top of PyTorch, to segment ret
 
 ## 📁 Project Structure
 
-```bash
+ ` ```python 
 .
 ├── data/                     # Dataset (REFUGE2)
 │   ├── images/
@@ -34,7 +34,7 @@ We leverage the **Unet++** architecture, built on top of PyTorch, to segment ret
 ├── visualize.py              # Visualize predictions
 ├── evaluate.py               # Evaluation metrics
 └── README.md
-
+`
 ## Getting Started
 
 ### Setup Environment
