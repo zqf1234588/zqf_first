@@ -34,3 +34,38 @@ We leverage the **Unet++** architecture, built on top of PyTorch, to segment ret
 ├── visualize.py              # Visualize predictions
 ├── evaluate.py               # Evaluation metrics
 └── README.md
+
+## Getting Started
+
+### Setup Environment
+
+
+### Prepare Dataset
+Organize the REFUGE2 dataset under the ./data directory:
+
+### Train the Model
+
+### Run Inference and Visualize Results
+
+## Evaluation Metrics
+- Dice Coefficient
+- Intersection over Union (IoU)
+- Precision
+- Pixel-wise Accuracy
+
+## Example Visualization
+![66.png…]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
