@@ -9,7 +9,7 @@ We leverage the **Unet++** architecture, built on top of PyTorch, to segment ret
 ---
 
 ##  Features
--    Pretraing for REFUGE2 dataset
+-  Pretraing for REFUGE2 dataset
 -  Preprocessing of REFUGE2 dataset (images + masks)
 -  Unet++ model implementation for segmentation
 -  Training and testing with performance logging
@@ -33,7 +33,7 @@ We leverage the **Unet++** architecture, built on top of PyTorch, to segment ret
 |   ├── run.py
 |   ├── simclr.py               # Contrastive learning method
 │   └── utils.py                # Tools for save_checkpoint, save_config_file, calculate accuracy
-├── SiimCLR/                     
+├── SimCLR/                     
 │   ├── datasets/               # Dataset (REFUGE2)
 │   ├── env/                    # SMP attention method
 │   ├── models/                 # Duoble encoder Unet++ and apdative encoder for contrastive learning
