@@ -4,7 +4,7 @@
 
 ## 📌 Overview
 
-We leverage the **Unet++** architecture, built on top of PyTorch, to segment retinal images. The project covers the full pipeline from data preprocessing, model training/testing, to result visualization and performance evaluation.
+The **Unet++** architecture, built on top of PyTorch, to segment retinal images. The project covers the full pipeline from data preprocessing, model training/testing, to result visualization and performance evaluation.
 
 ---
 
